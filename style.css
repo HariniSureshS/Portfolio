@@ -335,7 +335,7 @@ height: 50px;
     margin-bottom: 0.5rem;
   }
   
-  @media (max-width: 30.625em) {
+  @media (max-width: 640px) {
     .projects-section {
       padding: 6rem 1rem;
     }
