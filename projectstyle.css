@@ -187,4 +187,10 @@ h1#write{
   
 }
 
+.main-section {
+  box-shadow: 0 0 7px black;
+  padding: 5px 5px 5px 5px ;
+  margin: 10px 10px 20px 10px;
+}
+
 
