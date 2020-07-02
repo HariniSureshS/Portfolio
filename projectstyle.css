@@ -164,3 +164,27 @@ height: 50px;
 {
     color: #fff !important;
 }
+
+@keyframes look {
+from,
+to {
+  border-left: 0px;
+}
+50% {
+  border-left: 3px solid #000000;
+}
+}
+
+
+h1#w{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #000000;
+  display: none;
+}
+h1#write{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+  
+}
+
+

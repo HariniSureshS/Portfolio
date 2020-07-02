@@ -46,7 +46,7 @@
   <main id="main-doc">
     <section class="main-section" id="SafeCity">
       <header>
-        <a href="https://safecity.in/" target="_blank" style="text-decoration:none;color: Grey" >SafeCity</a> : Data Analytics Volunteer :  May 2020 - Present
+        <a href="https://safecity.in/" target="_blank" style="text-decoration:none;color:skyblue" >SafeCity</a>  <h1 id="w">Data Analytics Volunteer :  May 2020 -</h1> <p id="write"></p>
       </header>
         <article>
         <p>
@@ -145,5 +145,34 @@
   <script src="smooth-scroll.js"></script>
   <script>
     var scroll = new SmoothScroll('a[href*="#"]');
+    var list = ['Present'];
+var x = document.createElement("SPAN"); 
+var one = document.getElementById("w"); 
+var str = ''; 
+var i=0;
+var cont=0;
+
+function words(){
+    if (cont < list[i].length) {
+        var element = list[i][cont];
+        printF(element);
+        cont++;
+    }else{
+        i++;
+        cont=0;
+        str='';
+        if (i>=list.length) {
+            i=0;
+        }
+    }
+}
+
+function printF(e){
+    str = str+e;   
+    document.getElementById("write").innerHTML = one.innerHTML+' '+str; //La voy cambiando en el DOM
+    document.getElementById("write").appendChild(x); 
+}
+
+window.setInterval("words()",300); 
 </script>
   </html>
